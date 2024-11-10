@@ -21,13 +21,18 @@
 
     <main>
         <h1>Descargas</h1>
-        <p>Introduce la contraseña para acceder a la descarga:</p>
+        <p>Ya está aquí una nueva release de The Preditoons</p>
+        <p>Se ha añadido el mapa oculto "San Kiriki".</p>
+        <p>Se ha añadido un acertijo secreto en el monte Hebrón.</p>
+        <p>Se ha actualizado la pantalla final del End Game.</p><br><br>
+        <p>¡Descárgate YA la versión 1.3 para Windows y Mac!</p>
 
         <form id="passwordForm">
             <input type="password" id="password" placeholder="Contraseña" required>
             <button type="submit">Descargar</button>
         </form>
 
+        <p>Si el enlace está caído o quieres pedir otra versión puedes hacerlo desde la sección de "Contacto".</p>
         <p id="message"></p>
 
         <script>
@@ -40,8 +45,8 @@
                 if (password === correctPassword) {
                     messageElement.innerHTML = `
                         <p>Contraseña correcta. Elige tu opción de descarga:</p>
-                        <a href="./thepreditoons/MACThe Preditoons RPG 1.3.rar" download>Haz clic aquí para descargar el archivo para MAC.</a><br>
-                        <a href="./thepreditoons/WINThe Preditoons RPG 1.3.rar" download>Haz clic aquí para descargar el archivo para WINDOWS.</a>
+                        <a href="https://we.tl/t-7UN9XTeLoD" download>Haz clic aquí para descargar el archivo para MAC.</a><br>
+                        <a href="https://we.tl/t-F6RhDECj5F" download>Haz clic aquí para descargar el archivo para WINDOWS.</a>
                     `;
                 } else {
                     messageElement.innerHTML = 'Contraseña incorrecta. Redirigiendo a la página principal...';
