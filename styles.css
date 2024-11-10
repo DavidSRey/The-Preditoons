@@ -1,13 +1,31 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
+
+body.inicio {
+    background-image: url('./img/background1.jpg');
+    background-size: 70% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url('./img/background2.jpg');
+    background-size: 70% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #333;
+    background-color: #1c92ed;
     color: white;
     padding: 10px;
 }
@@ -29,13 +47,16 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 10px;
+    
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #02af04;
     color: white;
     position: fixed;
     bottom: 0;
@@ -43,16 +64,31 @@ footer {
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 50%;
+    border-collapse: separate;
     margin-top: 20px;
+    margin-left: 220px;
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
+}
+
+.icono {
+    width: 90px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+        
+}
+
+input, textarea {
+    resize: none; /* Deshabilita la opción de redimensionar el cuadro de texto */
+    display: block;  /* Asegura que los inputs y textareas se alineen uno debajo del otro */
+    width: 50%;     /* Opcional: Ajusta el ancho de los elementos */
+
 }

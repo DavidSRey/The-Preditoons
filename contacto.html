@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">THE PREDITOONS</a></li>
+                <li><a href="about.html">The Preditoons</a></li>
                 <li><a href="descargas.html">Descargas</a></li>
                 <li><a href="ranking.html">Ranking</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -21,6 +21,26 @@
 
     <main>
         <h1>Contacto</h1>
+        <p>Si tienes alguna sugerencia, pregunta, en fin, lo que sea...</p>
+        <img src="./img/david.png" alt="David" class="icono">
+        <br><br><br>
+        <form action="https://formspree.io/f/xgveyowv" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            <br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!--
         <form>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" required><br><br>
@@ -33,10 +53,13 @@
 
             <button type="submit">Enviar</button>
         </form>
+    -->
+        <br>
+        
     </main>
-
+    
     <footer>
-        <p>&copy; 2024 THE PREDITOONS - DavidSR</p>
+        <p>&copy; 2024 THE PREDITOONS</p>
     </footer>
 </body>
 </html>
