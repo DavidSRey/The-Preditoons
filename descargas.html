@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">THE PREDITOONS</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Descargas</h1>
+        <p>Introduce la contraseña para acceder a la descarga:</p>
+
+        <form id="passwordForm">
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Acceder</button>
+        </form>
+
+        <p id="message"></p>
+
+        <script>
+            document.getElementById("passwordForm").onsubmit = function(event) {
+                event.preventDefault();
+                const password = document.getElementById("password").value;
+                const correctPassword = "preditoonpablo";
+                const messageElement = document.getElementById("message");
+
+                if (password === correctPassword) {
+                    messageElement.innerHTML = '<a href="file_to_download.zip" download>Haz clic aquí para descargar el archivo.</a>';
+                } else {
+                    messageElement.innerHTML = 'Contraseña incorrecta. Redirigiendo a la página principal...';
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 2000);
+                }
+            };
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 THE PREDITOONS - DavidSR</p>
+    </footer>
+</body>
+</html>
