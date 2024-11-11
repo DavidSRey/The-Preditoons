@@ -92,3 +92,44 @@ input, textarea {
     width: 50%;     /* Opcional: Ajusta el ancho de los elementos */
 
 }
+
+/* Consultas de medios para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    body {
+        background-color: #fff; /* Cambiar el fondo para pantallas pequeñas */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Reducir el tamaño del texto en móviles */
+    }
+
+    table {
+        width: 100%; /* Hacer que la tabla ocupe el 100% del ancho en móviles */
+        margin: 10px;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+
+    /* Alinear los textos en las celdas de la tabla */
+    th, td {
+        text-align: left;
+        font-size: 0.9em;
+    }
+}
+
+/* Consultas de medios para pantallas aún más pequeñas (móviles en orientación vertical) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em; /* Reducir aún más el tamaño de los encabezados en pantallas muy pequeñas */
+    }
+
+    table {
+        font-size: 0.8em; /* Reducir tamaño de la tabla en pantallas muy pequeñas */
+    }
+
+    td, th {
+        padding: 5px; /* Menor espacio en las celdas de la tabla */
+    }
+}
