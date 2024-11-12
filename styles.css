@@ -2,7 +2,7 @@
 
 body.inicio {
     background-image: url('./img/background1.jpg');
-    background-size: 70% 100%;
+    background-size: 90% 110%;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
@@ -14,7 +14,7 @@ body.inicio {
 
 body {
     background-image: url('./img/background2.jpg');
-    background-size: 70% 100%;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    background-color: #1c92ed;
+    background-color: #4183E4;
     color: white;
     padding: 10px;
 }
@@ -50,13 +50,21 @@ main {
     margin-left: 20vw;
     margin-right: 20vw;
     padding: 10px;
+    overflow-y: auto;
     
+}
+
+main.ranking {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 10px;
+
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #02af04;
+    background-color: #91E02C;
     color: white;
     position: fixed;
     bottom: 0;
@@ -95,8 +103,28 @@ input, textarea {
 
 /* Consultas de medios para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+    
+    body.inicio {
+        background-color: #fff; /* Cambiar el fondo para pantallas pequeñas */
+        background-image: url('./img/background1.jpg');
+        background-size: 130% 100%;
+        
+    }
+
     body {
         background-color: #fff; /* Cambiar el fondo para pantallas pequeñas */
+        background-image: url('./img/background2.jpg');
+        background-size: 130% 100%;
+        
+    }
+
+    main {
+        overflow: scroll;
+
+    }
+
+    main.ranking {
+        overflow: hidden;
     }
 
     h1, h2 {
@@ -121,6 +149,19 @@ input, textarea {
 
 /* Consultas de medios para pantallas aún más pequeñas (móviles en orientación vertical) */
 @media (max-width: 480px) {
+    
+    body.inicio {
+        background-color: #fff; /* Cambiar el fondo para pantallas pequeñas */
+        background-image: url('./img/background1.jpg');
+        background-size: 130% 100%;
+    }
+
+    body {
+        background-color: #fff; /* Cambiar el fondo para pantallas pequeñas */
+        background-image: url('./img/background2.jpg');
+        background-size: 130% 100%;
+    }
+    
     h1, h2 {
         font-size: 1.2em; /* Reducir aún más el tamaño de los encabezados en pantallas muy pequeñas */
     }
@@ -131,5 +172,9 @@ input, textarea {
 
     td, th {
         padding: 5px; /* Menor espacio en las celdas de la tabla */
+    }
+
+    main.ranking {
+        overflow: hidden;
     }
 }

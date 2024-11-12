@@ -47,9 +47,13 @@
                         <p>Contraseña correcta. Elige tu opción de descarga:</p>
                         <a href="https://we.tl/t-7UN9XTeLoD" download>Haz clic aquí para descargar el archivo para MAC.</a><br>
                         <a href="https://we.tl/t-F6RhDECj5F" download>Haz clic aquí para descargar el archivo para WINDOWS.</a>
+                        <br><br><br><br>
                     `;
                 } else {
-                    messageElement.innerHTML = 'Contraseña incorrecta. Redirigiendo a la página principal...';
+                    messageElement.innerHTML = `
+                    <p>Contraseña incorrecta. Redirigiendo a la página principal...</p>
+                    <br><br><br><br>
+                    `;
                     setTimeout(() => {
                         window.location.href = 'index.html';
                     }, 3000);
