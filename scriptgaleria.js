@@ -1,3 +1,6 @@
+// ------------------------------------
+// Código para la galería
+// ------------------------------------
 // Selecciona el lightbox y la imagen en primer plano
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -15,3 +18,4 @@ lightbox.addEventListener("click", function() {
     lightbox.style.display = "none";     // Oculta el lightbox
     lightboxImg.src = "";                // Limpia la fuente de la imagen
 });
+// ------------------------------------
