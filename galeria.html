@@ -6,7 +6,7 @@
     <title>THE PREDITOONS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="inicio">
+<body>
     <header>
         <nav>
             <ul>
@@ -20,12 +20,26 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="gallery-content">
+        <h1>Galería</h1>
+        <div class="gallery">
+            <img src="./img/galeria1.jpg" alt="Imagen 1" class="thumbnail">
+            <img src="./img/galeria2.jpg" alt="Imagen 2" class="thumbnail">
+            <img src="./img/galeria3.jpg" alt="Imagen 3" class="thumbnail">
+            <img src="./img/galeria4.jpg" alt="Imagen 4" class="thumbnail">   
+            <img src="./img/galeria5.jpg" alt="Imagen 5" class="thumbnail">   
+            <img src="./img/galeria6.jpg" alt="Imagen 6" class="thumbnail">      
+        </div>
+        <br><br><br><br><br><br><br><br>
     </main>
 
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
     <footer>
         <p>&copy; 2024 THE PREDITOONS</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
