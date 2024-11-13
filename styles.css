@@ -255,9 +255,11 @@ button:active {
     background-color: #4183E4;
 }
 
+/*
 .explosion-button.disappear {
     animation: disappear 0.6s ease forwards;
 }
+*/
 
 /* Efecto de desaparición */
 @keyframes disappear {
