@@ -26,7 +26,7 @@ document.querySelectorAll(".explosion-button").forEach(button => {
         }
 
         // Eliminar el botón después de la animación
-        setTimeout(() => button.remove(), 200);
+        // setTimeout(() => button.remove(), 200);
     });
 });
 
