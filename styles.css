@@ -61,6 +61,13 @@ main.ranking {
 
 }
 
+main.gallery-content {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 10px;
+
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -316,11 +323,16 @@ button:active {
 
     main {
         overflow: scroll;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 10px;
 
     }
 
     main.ranking {
         overflow: hidden;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     h1, h2 {
@@ -328,8 +340,8 @@ button:active {
     }
 
     table {
-        width: 100%; /* Hacer que la tabla ocupe el 100% del ancho en móviles */
-        margin: 10px;
+        width: 100%; /* Hacer que la tabla ocupe el % del ancho en móviles */
+        margin: 0px;
     }
 
     td, th {
@@ -370,7 +382,34 @@ button:active {
         padding: 5px; /* Menor espacio en las celdas de la tabla */
     }
 
+    .thumbnail {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    
+    .thumbnail:hover {
+        transform: scale(1.05);
+    }
+    main {
+        overflow: scroll;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 10px;
+        
+    }
+
     main.ranking {
         overflow: hidden;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .rankingtable {
+        overflow: hidden;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
